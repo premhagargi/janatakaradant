@@ -3,9 +3,10 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Menu, ShoppingCart, Heart, Mountain } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import React from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -66,9 +67,11 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">Menu</SheetTitle>
               <div className="p-4">
                 <Logo />
                 <nav className="mt-8 flex flex-col gap-6">
