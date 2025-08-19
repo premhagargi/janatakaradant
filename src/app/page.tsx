@@ -16,9 +16,8 @@ export default function Home() {
           src="https://placehold.co/1600x900.png"
           alt="Traditional Indian sweets"
           data-ai-hint="indian sweets"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-50"
+          fill
+          className="object-cover brightness-50"
         />
         <div className="relative z-10 flex flex-col items-center p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold drop-shadow-lg">

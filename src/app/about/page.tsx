@@ -22,9 +22,8 @@ export default function AboutPage() {
           src="https://placehold.co/1600x600.png"
           alt="Sweets manufacturing"
           data-ai-hint="kitchen factory"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-50"
+          fill
+          className="object-cover brightness-50"
         />
         <div className="relative z-10 p-4">
             <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
